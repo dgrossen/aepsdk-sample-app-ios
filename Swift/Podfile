@@ -27,7 +27,7 @@ target 'AEPSampleApp' do
   # step-edge-end
 
   # step-assurance-start
-  pod 'AEPAssurance'
+  pod 'AEPAssurance', :git => 'git@github.com:adobe/aepsdk-assurance-ios.git', :branch => 'quickConnect'
   # step-assurance-end
   
   pod 'AEPUserProfile'

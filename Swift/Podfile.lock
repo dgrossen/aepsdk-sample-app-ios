@@ -35,7 +35,7 @@ PODS:
     - AEPCore
 
 DEPENDENCIES:
-  - AEPAssurance
+  - "AEPAssurance (from `git@github.com:adobe/aepsdk-assurance-ios.git`, branch `quickConnect`)"
   - AEPCore
   - AEPEdge
   - AEPEdgeConsent
@@ -52,7 +52,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AEPAssurance
     - AEPCore
     - AEPEdge
     - AEPEdgeConsent
@@ -66,6 +65,9 @@ SPEC REPOS:
     - AEPUserProfile
 
 EXTERNAL SOURCES:
+  AEPAssurance:
+    :branch: quickConnect
+    :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
   AEPOptimize:
     :branch: staging
     :git: https://github.com/adobe/aepsdk-optimize-ios.git
@@ -74,6 +76,9 @@ EXTERNAL SOURCES:
     :git: https://github.com/adobe/aepsdk-sample-extension-ios.git
 
 CHECKOUT OPTIONS:
+  AEPAssurance:
+    :commit: 7c9b099081c254f47ab9ce25ae71430d3073ae29
+    :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
   AEPOptimize:
     :commit: 17d387e286fdee5a7db9e534490ba4b504af471d
     :git: https://github.com/adobe/aepsdk-optimize-ios.git
@@ -97,6 +102,6 @@ SPEC CHECKSUMS:
   AEPSignal: 636e615dd02d670aa0fe6c2b9dcebee6c95e1f4f
   AEPUserProfile: 2ddb5ba8e2c22dd8f942992306b050f4be2c2403
 
-PODFILE CHECKSUM: ae89fcf1fb8a044121b5b071925cd953eb31c47b
+PODFILE CHECKSUM: 6cbf3ce345abe7463d14924faa57f8f236210393
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

@@ -43,7 +43,7 @@ import AEPUserProfile
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-    private let ENVIRONMENT_FILE_ID = ""
+    private let ENVIRONMENT_FILE_ID = "1b50a869c4a2/02a81577edc7/launch-7be58e64e6eb-development"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -72,6 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             // Use the App id assigned to this application via Adobe Launch
             MobileCore.configureWith(appId: self.ENVIRONMENT_FILE_ID)
             // Use the sandbox configuration to allow the messaging sdk to use apnsSandbox
+            MobileCore.updateConfigurationWith(configDict: ["edge.environment" : "int"])
             MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox" : true])
             if appState != .background {
                 // only start lifecycle if the application is not in the background
@@ -108,8 +109,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
           //Ask for user permission
           center.requestAuthorization(options: [.badge, .sound, .alert]) {
-            [weak self] granted, _ in
+            [weak self] granted, error in
             guard granted else { return }
+              
+              if let error = error {
+                  print("THERE WAS A DAN! : \(error)")
+              }
 
             center.delegate = self
 
