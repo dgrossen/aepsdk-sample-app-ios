@@ -1,3 +1,33 @@
+# Quick Connect with First Mile in QA #
+
+After following the original steps below, open `Pods` > `AEPAssurance` > `AssuranceConstants` and change:
+```
+static let QUICK_CONNECT_BASE_URL = "https://device.griffon.adobe.com/device/"
+```
+to:
+```
+static let QUICK_CONNECT_BASE_URL = "https://device-qa.griffon.adobe.com/device/"
+```
+
+Next, open `Pods` > `AEPAssurance` > `AssuranceEnvironment` and change:
+```
+enum AssuranceEnvironmentURLFormat {
+    static let PRODUCTION = ""
+    static let QA = "-qa"
+    static let STAGE = "-stage"
+    static let DEV = "-dev"
+}
+```
+to: 
+```
+enum AssuranceEnvironmentURLFormat {
+    static let PRODUCTION = "-qa"
+    static let QA = "-qa"
+    static let STAGE = "-stage"
+    static let DEV = "-dev"
+}
+```
+
 # AEP SDK Sample App for iOS
 
 ## About this Project
