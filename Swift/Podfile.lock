@@ -2,35 +2,36 @@ PODS:
   - AEPAssurance (3.0.1):
     - AEPCore (>= 3.1.0)
     - AEPServices (>= 3.1.0)
-  - AEPCore (3.5.0):
+  - AEPCore (3.7.0):
     - AEPRulesEngine (>= 1.1.0)
-    - AEPServices (>= 3.5.0)
-  - AEPEdge (1.4.0):
+    - AEPServices (>= 3.7.0)
+  - AEPEdge (1.4.1):
     - AEPCore (>= 3.5.0)
     - AEPEdgeIdentity
   - AEPEdgeConsent (1.0.1):
     - AEPCore (>= 3.5.0)
     - AEPEdge (>= 1.4.0)
-  - AEPEdgeIdentity (1.0.1):
-    - AEPCore (>= 3.1.1)
-  - AEPIdentity (3.5.0):
-    - AEPCore (>= 3.5.0)
-  - AEPLifecycle (3.5.0):
-    - AEPCore (>= 3.5.0)
-  - AEPMessaging (1.0.0):
-    - AEPCore
+  - AEPEdgeIdentity (1.1.0):
+    - AEPCore (>= 3.6.0)
+  - AEPIdentity (3.7.0):
+    - AEPCore (>= 3.7.0)
+  - AEPLifecycle (3.7.0):
+    - AEPCore (>= 3.7.0)
+  - AEPMessaging (1.1.0-beta):
+    - AEPCore (>= 3.4.2)
     - AEPEdge (>= 1.1.0)
     - AEPEdgeIdentity (>= 1.0.0)
-    - AEPServices
+    - AEPOptimize (>= 1.0.0)
+    - AEPServices (>= 3.4.2)
   - AEPOptimize (1.0.0):
     - AEPCore (>= 3.2.0)
     - AEPEdge (>= 1.2.0)
-  - AEPRulesEngine (1.1.0)
+  - AEPRulesEngine (1.2.0)
   - AEPSampleExtensionSwift (0.0.1):
     - AEPCore (~> 3.0)
-  - AEPServices (3.5.0)
-  - AEPSignal (3.5.0):
-    - AEPCore (>= 3.5.0)
+  - AEPServices (3.7.0)
+  - AEPSignal (3.7.0):
+    - AEPCore (>= 3.7.0)
   - AEPUserProfile (3.0.1):
     - AEPCore
 
@@ -42,8 +43,8 @@ DEPENDENCIES:
   - AEPEdgeIdentity
   - AEPIdentity
   - AEPLifecycle
-  - AEPMessaging
-  - AEPOptimize (from `https://github.com/adobe/aepsdk-optimize-ios.git`, branch `staging`)
+  - AEPMessaging (from `https://github.com/adobe/aepsdk-messaging-ios.git`, branch `staging`)
+  - AEPOptimize
   - AEPRulesEngine
   - AEPSampleExtensionSwift (from `https://github.com/adobe/aepsdk-sample-extension-ios.git`, branch `main`)
   - AEPServices
@@ -58,50 +59,64 @@ SPEC REPOS:
     - AEPEdgeIdentity
     - AEPIdentity
     - AEPLifecycle
-    - AEPMessaging
+    - AEPOptimize
     - AEPRulesEngine
     - AEPServices
     - AEPSignal
     - AEPUserProfile
 
 EXTERNAL SOURCES:
+<<<<<<< HEAD
   AEPAssurance:
     :branch: quickConnect
     :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
   AEPOptimize:
+=======
+  AEPMessaging:
+>>>>>>> upstream/main
     :branch: staging
-    :git: https://github.com/adobe/aepsdk-optimize-ios.git
+    :git: https://github.com/adobe/aepsdk-messaging-ios.git
   AEPSampleExtensionSwift:
     :branch: main
     :git: https://github.com/adobe/aepsdk-sample-extension-ios.git
 
 CHECKOUT OPTIONS:
+<<<<<<< HEAD
   AEPAssurance:
     :commit: 7c9b099081c254f47ab9ce25ae71430d3073ae29
     :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
   AEPOptimize:
     :commit: 17d387e286fdee5a7db9e534490ba4b504af471d
     :git: https://github.com/adobe/aepsdk-optimize-ios.git
+=======
+  AEPMessaging:
+    :commit: 713867e60fa16c2e350c01e1ca799bf46c7ac7c3
+    :git: https://github.com/adobe/aepsdk-messaging-ios.git
+>>>>>>> upstream/main
   AEPSampleExtensionSwift:
     :commit: 23fe9522505774eb602cbfcc6ef4cb9fc4d9db21
     :git: https://github.com/adobe/aepsdk-sample-extension-ios.git
 
 SPEC CHECKSUMS:
   AEPAssurance: b25880cd4b14f22c61a1dce19807bd0ca0fe9b17
-  AEPCore: a3b4159038df33b63ebdab227342cd57d8ded1b0
-  AEPEdge: 0e7c11d13e71d23d995bff46f48691c1bb65f84f
+  AEPCore: 290dd609f261efe7a049bd3bdcbbc0734fe0e1fc
+  AEPEdge: 6faf60328f9e5ae7a107fd61f9a968f46ebf2928
   AEPEdgeConsent: a23b35ab331d2aa2013fcef49c9d6b80085d5597
-  AEPEdgeIdentity: 5c42cef81835851232136a9e1fbbbe33b204ee11
-  AEPIdentity: d7745fc4df403b7281b18fa7df917e68f061c9b2
-  AEPLifecycle: d3ff90c661c4452fb1c619e7f02dad8ba49a8fd2
-  AEPMessaging: 661cc08435254f3c9cc0899785c20a7952952e95
-  AEPOptimize: 7be718a9aaa494cf9bfd367c5f6c008f91dc1edf
-  AEPRulesEngine: bb2927ed5501ddf9754c66e97f8d2b1cf8e33b19
+  AEPEdgeIdentity: 47f0c6ecbec5857b2a8cb9b7bf717c2424c6bae0
+  AEPIdentity: 965c831d132eba4874566220598590399f7617ac
+  AEPLifecycle: 7c2ba7de3b067999eb8b6a66f85f5815e87a06dc
+  AEPMessaging: 72ebb84ce97be336660a4bbe7eed46f47965ba5c
+  AEPOptimize: 413690f88cb8ae574153a94081331788ca740a91
+  AEPRulesEngine: 71228dfdac24c9ded09be13e3257a7eb22468ccc
   AEPSampleExtensionSwift: 57f8b73affbf831b274257811a2102805c498538
-  AEPServices: 2e869a387b67c04ab5f3f647026412ff410efbb0
-  AEPSignal: 636e615dd02d670aa0fe6c2b9dcebee6c95e1f4f
+  AEPServices: 7bc2af2a153ea223e87ec50c8e3fd6e0282869c6
+  AEPSignal: a7fbfd170fc121a4c0c413b6af644513d9966fde
   AEPUserProfile: 2ddb5ba8e2c22dd8f942992306b050f4be2c2403
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: 6cbf3ce345abe7463d14924faa57f8f236210393
+=======
+PODFILE CHECKSUM: eda14a558036cf9e3057fa82e4e4509d5c5fed12
+>>>>>>> upstream/main
 
 COCOAPODS: 1.11.3
