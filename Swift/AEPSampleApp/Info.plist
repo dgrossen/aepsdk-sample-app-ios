@@ -2,15 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD
-=======
 	<key>NSUserTrackingUsageDescription</key>
 	<string>App would like to access IDFA for advertising tracking purposes</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Adobe_Experience_Platform_logo_256px.png</string>
 	</array>
->>>>>>> upstream/main
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

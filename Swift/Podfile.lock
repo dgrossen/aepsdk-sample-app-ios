@@ -66,14 +66,10 @@ SPEC REPOS:
     - AEPUserProfile
 
 EXTERNAL SOURCES:
-<<<<<<< HEAD
   AEPAssurance:
     :branch: quickConnect
     :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
-  AEPOptimize:
-=======
   AEPMessaging:
->>>>>>> upstream/main
     :branch: staging
     :git: https://github.com/adobe/aepsdk-messaging-ios.git
   AEPSampleExtensionSwift:
@@ -81,18 +77,12 @@ EXTERNAL SOURCES:
     :git: https://github.com/adobe/aepsdk-sample-extension-ios.git
 
 CHECKOUT OPTIONS:
-<<<<<<< HEAD
   AEPAssurance:
-    :commit: 7c9b099081c254f47ab9ce25ae71430d3073ae29
+    :commit: 1dbea1dca2b865e8dfc40f1a84dff1e3c4390ab2
     :git: "git@github.com:adobe/aepsdk-assurance-ios.git"
-  AEPOptimize:
-    :commit: 17d387e286fdee5a7db9e534490ba4b504af471d
-    :git: https://github.com/adobe/aepsdk-optimize-ios.git
-=======
   AEPMessaging:
     :commit: 713867e60fa16c2e350c01e1ca799bf46c7ac7c3
     :git: https://github.com/adobe/aepsdk-messaging-ios.git
->>>>>>> upstream/main
   AEPSampleExtensionSwift:
     :commit: 23fe9522505774eb602cbfcc6ef4cb9fc4d9db21
     :git: https://github.com/adobe/aepsdk-sample-extension-ios.git
@@ -113,10 +103,6 @@ SPEC CHECKSUMS:
   AEPSignal: a7fbfd170fc121a4c0c413b6af644513d9966fde
   AEPUserProfile: 2ddb5ba8e2c22dd8f942992306b050f4be2c2403
 
-<<<<<<< HEAD
-PODFILE CHECKSUM: 6cbf3ce345abe7463d14924faa57f8f236210393
-=======
-PODFILE CHECKSUM: eda14a558036cf9e3057fa82e4e4509d5c5fed12
->>>>>>> upstream/main
+PODFILE CHECKSUM: a57c23f94361f601e4d0ffb61a07010ef8014eb0
 
 COCOAPODS: 1.11.3

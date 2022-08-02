@@ -47,14 +47,6 @@ import AEPUserProfile
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private let ENVIRONMENT_FILE_ID = "1b50a869c4a2/aa12baca17c2/launch-fa296ad34b2c-development"
-=======
->>>>>>> upstream/main
-=======
-    private let ENVIRONMENT_FILE_ID = ""
->>>>>>> 948597df2e5390f7928408a05d8ac4058d002a5c
 
     /// APP ID - EDGE CONFIGURATION
     // private let ENVIRONMENT_FILE_ID = ""
